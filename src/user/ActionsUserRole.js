@@ -10,7 +10,7 @@ export function fetchUserRole() {
   return dispatch => {
     dispatch(fetchUserRoleStarted()); // antes de fazer o get, coloca o loading a true
     axios
-      .get(`https://localhost:8443/loginWeb/getUserRole`, {
+      .get(`https://smarthome-g2-server.herokuapp.com/loginWeb/getUserRole`, {
           headers: {
             'Authorization': token,
             "Access-Control-Allow-Credentials": true,
