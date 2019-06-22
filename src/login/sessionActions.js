@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function logInUser(username, password) {
   return axios
-    .post('https://localhost:8443/login', {username, password}, {
+    .post('https://smarthome-g2-server.herokuapp.com/login', {username, password}, {
       headers: new Headers({
         Accept: 'application/json',
         'Content-Type': 'application/json'
