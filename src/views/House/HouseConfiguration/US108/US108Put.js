@@ -17,7 +17,7 @@ class US108Put extends Component {
     const length = this.props.length;
     const height = this.props.height;
     console.log(this.props);
-    fetch('https://localhost:8443/houseSettings/room', {
+    fetch('https://smarthome-g2-server.herokuapp.com/houseSettings/room', {
       method: 'put',
       headers: {
         'Authorization': token,

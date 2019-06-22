@@ -10,7 +10,7 @@ export const fetchHottestDay = ({ from, to }) => {
   return dispatch => {
     dispatch(fetchHottestDayStarted(from, to)); // antes de fazer o get, coloca o loading a true
     axios
-      .get(`https://localhost:8443/houseMonitoring/hottestDay?initialDate=`+from+`&finalDate=`+to, {
+      .get(`https://smarthome-g2-server.herokuapp.com/houseMonitoring/hottestDay?initialDate=`+from+`&finalDate=`+to, {
         headers: {
           'Authorization': token,
           "Access-Control-Allow-Credentials": true,

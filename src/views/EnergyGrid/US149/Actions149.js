@@ -11,7 +11,7 @@ export const detachRoomFromGrid = ({name, grid}) => {
   return dispatch => {
     dispatch(fetchRoomFromGridInfo(name, grid));
     axios
-      .delete('https://localhost:8443/gridSettings/grids/' + grid,
+      .delete('https://smarthome-g2-server.herokuapp.com/gridSettings/grids/' + grid,
         {
           headers: {
             'Authorization': token,

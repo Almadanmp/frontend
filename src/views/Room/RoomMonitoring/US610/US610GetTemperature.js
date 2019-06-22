@@ -13,7 +13,7 @@ class US610GetTemperature extends Component {
   componentDidMount() {
     const token = localStorage.getItem('loginToken')
     console.log(this.props);
-    fetch("https://localhost:8443/roomMonitoring/dayMaxTemperature/" + this.props.roomID + "?initialDate=" + this.props.day, {
+    fetch("https://smarthome-g2-server.herokuapp.com/roomMonitoring/dayMaxTemperature/" + this.props.roomID + "?initialDate=" + this.props.day, {
         headers: {
           'Authorization': token,
           "Access-Control-Allow-Credentials": true,

@@ -23,7 +23,7 @@ class SaveHouseLocation extends Component {
     const altitude = this.props.altitude
 
     console.log(this.props);
-    fetch('https://localhost:8443/house/', {
+    fetch('https://smarthome-g2-server.herokuapp.com/house/', {
       method: 'put',
       headers: {
         'Authorization': token,

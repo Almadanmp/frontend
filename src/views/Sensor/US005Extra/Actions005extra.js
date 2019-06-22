@@ -10,7 +10,7 @@ export function fetchSensorTypes() {
   return dispatch => {
     dispatch(fetchSensorTypesStarted());
     axios
-      .get(`https://localhost:8443/sensors/sensorTypes`, {
+      .get(`https://smarthome-g2-server.herokuapp.com/sensors/sensorTypes`, {
           headers: {
             'Authorization': token,
             "Access-Control-Allow-Credentials": true,

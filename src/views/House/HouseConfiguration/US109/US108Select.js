@@ -16,7 +16,7 @@ class US108Select extends Component {
 
   componentDidMount() {
     const token = localStorage.getItem('loginToken');
-    fetch('https://localhost:8443/houseSettings/houseRooms', {
+    fetch('https://smarthome-g2-server.herokuapp.com/houseSettings/houseRooms', {
         headers: {
           'Authorization': token,
           "Access-Control-Allow-Credentials": true,

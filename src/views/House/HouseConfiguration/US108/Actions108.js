@@ -10,7 +10,7 @@ export function fetchRooms() {
   return dispatch => {
     dispatch(fetchRoomsStarted());
     axios
-      .get(`https://localhost:8443/rooms/`, {
+      .get(`https://smarthome-g2-server.herokuapp.com/rooms/`, {
         headers: {
           'Authorization': token,
           "Access-Control-Allow-Credentials": true,

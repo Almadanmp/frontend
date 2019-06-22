@@ -20,7 +20,7 @@ class US253Post extends Component {
     const name = this.props.name;
     const dateStartedFunctioning = this.props.dateStartedFunctioning;
     const typeSensor = this.props.typeSensor;
-    fetch('https://localhost:8443/rooms/' + this.props.roomID + '/sensors', {
+    fetch('https://smarthome-g2-server.herokuapp.com/rooms/' + this.props.roomID + '/sensors', {
       method: 'post',
       headers: {
         'Authorization': token,

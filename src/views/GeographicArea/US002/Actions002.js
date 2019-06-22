@@ -10,7 +10,7 @@ export function fetchGATs() {
   return dispatch => {
     dispatch(fetchGATsStarted());
     axios
-      .get(`https://localhost:8443/geoAreas/areaTypes`, {
+      .get(`https://smarthome-g2-server.herokuapp.com/geoAreas/areaTypes`, {
           headers: {
             'Authorization': token,
             "Access-Control-Allow-Credentials": true,

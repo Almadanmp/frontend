@@ -23,7 +23,7 @@ class SaveAreaSensor extends Component {
     const altitude = this.props.altitude;
 
     console.log(this.props);
-    fetch('https://localhost:8443/sensors/areas/' + this.props.geographicAreaId + '/sensors', {
+    fetch('https://smarthome-g2-server.herokuapp.com/sensors/areas/' + this.props.geographicAreaId + '/sensors', {
       method: 'post',
       headers: {
         'Authorization': token,

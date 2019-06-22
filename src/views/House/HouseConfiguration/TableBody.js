@@ -15,7 +15,7 @@ class TableBody extends Component {
 
   componentDidMount() {
     const token = localStorage.getItem('loginToken');
-    fetch('https://localhost:8443/gridSettings/grids/' + this.props.gridID, {
+    fetch('https://smarthome-g2-server.herokuapp.com/gridSettings/grids/' + this.props.gridID, {
       headers: {
         'Authorization': token,
         "Access-Control-Allow-Credentials": true,

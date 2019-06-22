@@ -36,7 +36,7 @@ class US006Redux extends React.Component {
 
   componentDidMount() {
     const token = localStorage.getItem('loginToken');
-    fetch('https://localhost:8443/rooms/types', {
+    fetch('https://smarthome-g2-server.herokuapp.com/rooms/types', {
         headers: {
           'Authorization': token,
           "Access-Control-Allow-Credentials": true,
